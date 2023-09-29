@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow with return</title>
+</head>
+
+<body>
+    <script>
+        function foo(n) {
+            const f = (...args) => args[0] + n;
+            return f(10);
+        }
+
+        foo(1); // 11
+    </script>
+</body>
+
+</html>
